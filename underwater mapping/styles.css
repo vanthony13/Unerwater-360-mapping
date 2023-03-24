@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+#searchBar {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#searchInput {
+    width: 70%;
+    padding: 5px;
+}
+
+#searchButton {
+    padding: 5px;
+    margin-left: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#map {
+    width: 100%;
+    height: calc(100vh - 94px);
+}
+
+.leaflet-container {
+    z-index: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
